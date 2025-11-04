@@ -27,6 +27,7 @@
         <td>{{ $student->jenis_kelamin }}</td>
         <td>{{ $student->nisn }}</td>
         <td>
+          <a href="{{ route('admin.students.show', $student->id) }}" class="btn btn-info btn-sm">Lihat</a>
           <a href="{{ route('admin.students.edit', $student->id) }}" class="btn btn-warning btn-sm">Edit</a>
           <form action="{{ route('admin.students.destroy', $student->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Apakah Kamu yakin ingin menghapus data siswa ini?')">
             @csrf
