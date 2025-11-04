@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@yield('title', 'AdminLTE - Dilesin')</title>
+<!-- AdminLTE CSS -->
+<link rel="stylesheet" href="{{ asset('adminlte/dist/css/adminlte.min.css') }}">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="{{ asset('adminlte/plugins/fontawesome-free/css/all.min.css') }}">
 
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -51,6 +56,15 @@
   </div>
 
 </div>
+<!-- jQuery -->
+<script src="{{ asset('adminlte/plugins/jquery/jquery.min.js') }}"></script>
+
+<!-- Bootstrap -->
+<script src="{{ asset('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+<!-- AdminLTE App -->
+<script src="{{ asset('adminlte/dist/js/adminlte.min.js') }}"></script>
+
 </body>
 </html>
 
